@@ -13,7 +13,6 @@ function initializePage() {
   var likebutton = document.getElementsByClassName("likeBtn")
 
   for (var i = 0; i < likebutton.length; i++) {
-	// your code here
 	   likebutton[i].addEventListener("click", handleClick);
   }
 }
