@@ -9,5 +9,15 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
+
+  var likebutton = document.getElementsByClassName("likeBtn")
+
+  for (var i = 0; i < likebutton.length; i++) {
 	// your code here
+	   likebutton[i].addEventListener("click", handleClick);
+  }
+}
+
+function handleClick() {
+  ga('send', 'event', 'like', 'click')
 }
